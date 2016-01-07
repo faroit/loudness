@@ -17,6 +17,7 @@
  * along with Loudness.  If not, see <http://www.gnu.org/licenses/>. 
  */
 
+#ifdef __linux__
 #include "Timer.h"
 
 namespace loudness{
@@ -68,3 +69,4 @@ namespace loudness{
         return res.tv_nsec;
     }
 }
+#endif
